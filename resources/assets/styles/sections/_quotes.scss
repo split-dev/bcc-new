@@ -1,0 +1,48 @@
+.quotes {
+  padding: 88px 0;
+  &__wrapper {
+    display: flex;
+    @include _down($sm) {
+      flex-direction: column;
+    }
+  }
+  &__single {
+    position: relative;
+    padding: 70px 46px 50px;
+    @include _up($sm) {
+      width: 50%;
+    }
+    @include _up($lg) {
+      padding: 60px 98px 48px;
+    }
+    @include _down($lg) {
+      &.with-flag {
+        padding-right: 62px;
+      }
+    }
+  }
+  &__flag {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding: 30px 9px 4px;
+    font-size: 28px;
+    width: 52px;
+    box-sizing: border-box;
+    display: none;
+    @include _down($lg) {
+      display: block;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      bottom: -11px;
+      width: 0;
+      height: 0;
+      border-bottom: 11px solid transparent;
+      border-left: 26px solid #d6b991;
+      border-right: 26px solid #d6b991;
+    }
+  }
+}

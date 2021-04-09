@@ -1,0 +1,10 @@
+{
+  "link": [
+    { "url": "/", "title":  "Home" },
+    { "url": "/services", "title":  "Business Coaching" },
+    { "url": "/free-tools", "title":  "Free Tools" },
+    { "url": "/products", "title":  "Products" },
+    { "url": "/bcc-blog", "title":  "Blog" },
+    { "url": "/contact-us", "title":  "Contact Us" }
+  ]
+}

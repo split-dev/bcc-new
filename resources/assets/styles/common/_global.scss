@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+br {
+  @include _down($lg) {
+    display: none;
+  }
+}
+
+.section {
+  padding: 100px 0;
+  @include _down($md) {
+    padding: 70px 0;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #007bff;
+  margin-right: 3px;
+  display: inline-block;
+}
+
+.button-primary {
+  padding: 10px 17px;
+  border-radius: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  @extend .text-light, .font-medium, .text-20px, .bg-primary;
+  @include _down($md) {
+    padding: 10px 12px;
+  }
+}
+
+section.quotes,
+section.info-block,
+section.cta {
+  @include _down($lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

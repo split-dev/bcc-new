@@ -1,0 +1,77 @@
+.graph {
+  h2 {
+    max-width: 650px;
+    margin: 0 auto 80px;
+    @include _down($sm) {
+      margin-bottom: 50px;
+    }
+  }
+  &__image {
+    margin: 0 auto 70px;
+    position: relative;
+    @include _down($md) {
+      display: none;
+    }
+    @include _down($lg) {
+      svg {
+        width: 480px;
+      }
+    }
+    p {
+      position: absolute;
+      white-space: nowrap;
+      @include _down($lg) {
+        font-size: 16px;
+      }
+      br {
+        display: block;
+      }
+    }
+    .text-1 {
+      top: -72px;
+      left: -453px;
+    }
+    .text-2 {
+      top: -192px;
+      right: -399px;
+    }
+    .text-3 {
+      right: -452px;
+      top: 86px
+    }
+    @include _down($lg) {
+      .text-1 {
+        top: -59px;
+        left: -350px;
+      }
+      .text-2 {
+        top: -158px;
+        right: -312px;
+      }
+      .text-3 {
+        right: -350px;
+        top: 69px;
+      }
+    }
+  }
+  p {
+    max-width: 560px;
+    margin: 17px auto 5px;
+    @include _down($sm) {
+      max-width: 255px;
+    }
+  }
+}
+
+.d-md-none {
+  margin-bottom: 50px;
+  @include _up($md) {
+    display: none;
+  }
+  span {
+    line-height: normal;
+  }
+  p {
+    margin: 3px auto 20px !important;
+  }
+}

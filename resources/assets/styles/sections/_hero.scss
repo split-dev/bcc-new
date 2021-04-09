@@ -1,0 +1,60 @@
+.hero {
+  padding: 145px 0 130px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+  @include _down($xl) {
+    padding: 190px 0 175px;
+  }
+  &:after {
+    content: "";
+    background-color: rgba(#343a3e, 0.7);
+    mix-blend-mode: multiply;
+    z-index: -1;
+    @extend .absolute-fill;
+  }
+  &__container {
+    max-width: 895px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include _down($lg) {
+      flex-direction: column;
+      text-align: center;
+      .button-primary {
+        margin-top: 32px;
+      }
+    }
+  }
+  &__content {
+    max-width: 691px;
+    @include _up($lg) {
+      padding-right: 15px;
+    }
+    h2 {
+      margin-bottom: 50px;
+      @include _down($md) {
+        margin-bottom: 35px;
+      }
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  br {
+    display: inline;
+  }
+  a {
+    @include _down ($md) {
+      display: none;
+    }
+  }
+}

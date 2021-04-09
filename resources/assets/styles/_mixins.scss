@@ -1,0 +1,17 @@
+/*======== Breakoints & Media's ===========*/
+$sm: 565;
+$md: 768;
+$lg: 992;
+$xl: 1200;
+
+@mixin _down($breakpoint) {
+  @media (max-width: #{$breakpoint + "px"}) {
+    @content;
+  }
+}
+@mixin _up($breakpoint) {
+  /*  For more accuracy between (max-width) and (min-width) the value is adjusted by +1px  */
+  @media (min-width: #{$breakpoint + 1 + "px"}) {
+    @content;
+  }
+}

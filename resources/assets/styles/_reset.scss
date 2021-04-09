@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+#block-yui_3_17_2_1_1609250479905_3974 {
+  width: 100% !important;
+  padding: 0 !important;
+}
+.Index-page-content {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+.Index-page-scroll-indicator,
+.sumome-share-client,
+.sumome-image-sharer,
+.Footer {
+  display: none !important;
+}
+.sqs-layout > .sqs-row {
+  margin: 0 !important;
+}
+.Mobile-bar--top {
+  background-color: #000 !important;
+}
+
+.is-mobile-overlay-active .Mobile-overlay,
+.is-mobile-overlay-active .Mobile-overlay-close {
+  background-color: #1c1f21;
+}
+.Mobile-overlay-nav-item {
+  font-family: "SF Pro Text", sans-serif !important;
+}
+img.Mobile-bar-branding-logo {
+  display: none;
+}
+a.Mobile-bar-branding {
+  padding: 0;
+  &:after {
+    $size: 200px;
+    content: "";
+    display: block;
+    width: $size;
+    height: calc(#{$size} / 8);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://businesscoach.vercel.app/images/BUSINESSCOACH.com.png");
+  }
+}

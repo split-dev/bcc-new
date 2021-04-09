@@ -1,0 +1,89 @@
+/**
+ * ============
+ * Typography
+ * ============
+ * Define as much reusable typography here
+ * such as `.text-hero`, which can be `@extend`-ed from other scss files
+ * This way, this file become a master list of typography used throughout the site
+ */
+
+body {
+  font-family: "SF Pro Text", sans-serif;
+  letter-spacing: normal;
+  font-size: 16px;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.font-bedas {
+  font-family: "Bebas Neue", cursive;
+}
+.font-regular {
+  font-weight: 400 !important;
+}
+.font-medium {
+  font-weight: 500 !important;
+}
+.text-20px {
+  font-size: 20px;
+  line-height: 1.5;
+  @include _down($md) {
+    font-size: 16px;
+  }
+}
+.text-32px {
+  font-size: 32px;
+  line-height: 1.19;
+  @include _down($md) {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+  }
+}
+
+.text-40px {
+  font-size: 40px;
+  @include _down($md) {
+    font-size: 30px;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+a.text-light {
+  opacity: 1;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 26px;
+  font-weight: 300;
+  color: inherit;
+  font-family: "SF Pro Text", sans-serif;
+  letter-spacing: normal;
+}
+h1 {
+  font-size: 56px;
+  line-height: 1.18;
+  letter-spacing: -2px;
+  @include _down($md) {
+    font-size: 32px;
+    letter-spacing: -1.3px;
+  }
+}
+p {
+  line-height: 1.5;
+  margin-top: 0;
+  @include _down($md) {
+    font-size: 14px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

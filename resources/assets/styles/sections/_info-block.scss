@@ -1,0 +1,15 @@
+.info-block {
+  @include _down($md) {
+    padding: 50px 0;
+  }
+  @include _down($lg) {
+    .hero__inner {
+      text-align: left;
+    }
+  }
+  &__btn {
+    @include _down($md) {
+      align-self: flex-start;
+    }
+  }
+}
