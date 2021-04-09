@@ -29,7 +29,6 @@ yarn.lock
 # Build system
 node_modules/*
 dist/
-public/
 
 # IDE specific
 nbproject
