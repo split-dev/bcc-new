@@ -63,7 +63,7 @@
   }
 }
 
-.d-md-none {
+.image-desk {
   margin-bottom: 50px;
   @include _up($md) {
     display: none;
@@ -73,5 +73,10 @@
   }
   p {
     margin: 3px auto 20px !important;
+  }
+}
+.image-mob {
+  @include _up($md) {
+    display: none;
   }
 }
