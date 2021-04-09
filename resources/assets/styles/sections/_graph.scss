@@ -9,9 +9,6 @@
   &__image {
     margin: 0 auto 70px;
     position: relative;
-    @include _down($md) {
-      display: none;
-    }
     @include _down($lg) {
       svg {
         width: 480px;
@@ -20,37 +17,38 @@
     p {
       position: absolute;
       white-space: nowrap;
-      @include _down($lg) {
-        font-size: 16px;
+      @include _down($md) {
+        font-size: 14px;
       }
       br {
         display: block;
       }
     }
     .text-1 {
-      top: -72px;
+      top: -95px;
       left: -453px;
     }
     .text-2 {
-      top: -192px;
+      top: -211px;
       right: -399px;
     }
     .text-3 {
       right: -452px;
-      top: 86px
+      top: 66px
     }
-    @include _down($lg) {
+    @include _down($md) {
       .text-1 {
-        top: -59px;
-        left: -350px;
+        top: -11px;
+        left: -66px;
+        text-align: center;
       }
       .text-2 {
-        top: -158px;
-        right: -312px;
+        top: -79px;
+        right: -47px;
       }
       .text-3 {
-        right: -350px;
-        top: 69px;
+        right: -62px;
+        top: -39px;
       }
     }
   }
@@ -65,7 +63,7 @@
 
 .image-desk {
   margin-bottom: 50px;
-  @include _up($md) {
+  @include _down($md) {
     display: none;
   }
   span {

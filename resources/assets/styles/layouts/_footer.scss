@@ -14,6 +14,27 @@
     @include _up($md) {
       width: 50%;
     }
+    &__top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      @include _down($md) {
+        flex-direction: column;
+      }
+    }
+  }
+  &__social {
+    margin-top: 50px;
+    white-space: nowrap;
+    @include _up($md) {
+      margin-left: 50px;
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+    }
   }
   &__image {
     height: 100%;
@@ -25,15 +46,43 @@
       margin-top: 0;
       justify-content: flex-end;
     }
+    &.mobile {
+      @include _up($md) {
+        display: none;
+      }
+    }
+    &.desktop {
+      @include _down($md) {
+        display: none;
+      }
+    }
   }
   &__narrow {
     font-size: 12.8px;
     @include _up($md) {
       max-width: 405px;
     }
+    @include _down($md) {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      * {
+        font-size: 10px;
+        text-align: center;
+      }
+      a {
+        margin-top: 4px;
+      }
+    }
   }
   &__links-wrapper {
     display: flex;
     justify-content: space-between;
+    @include _down($md) {
+      flex-direction: column;
+      a:last-child {
+        margin-top: 20px;
+      }
+    }
   }
 }

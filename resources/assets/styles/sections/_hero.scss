@@ -6,6 +6,7 @@
   z-index: 1;
   @include _down($xl) {
     padding: 190px 0 175px;
+    background-position-x: 74%;
   }
   &:after {
     content: "";
